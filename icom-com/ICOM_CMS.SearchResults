@@ -1,38 +1,14 @@
----- dbg_log Matches (37 in 1 files) ----
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: can't get RoleSchemaUUID\n", __FUNCTION__);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session Schema title Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session Schema definiations Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session Schema instanceCollection Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session instance Failed with Obj:\"%s\" !!!\n", __FUNCTION__, G_SessionDefinitions);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session Schema Oem Failed with Obj:\"%s\" !!!\n", __FUNCTION__, G_SessionInstanceId);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session Schema ttl Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Session UserName Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: MAX session number is reached !!!\n", __FUNCTION__);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: can't find the role id for user [%s]!!!\n", __FUNCTION__, sUserName);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Create Session Hash \"%s\" Failed !!!\n", __FUNCTION__, sSessionObjID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Copy Session Hash \"%s\" Failed for appending ttl property!!!\n", __FUNCTION__, sSessionObjID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Create Session Collection Set \"%s\" Failed !!!\n", __FUNCTION__, G_SessionInstanceCollection);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Create Session Hash \"%s\" Failed !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: can't find the uuid of role [%s]!!!\n", __FUNCTION__, user[i].rolename);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: can't find the uuid of role [%s]!!!\n", __FUNCTION__, user[i].rolename);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Create OEM Session Hash \"%s\" Failed !!!\n", __FUNCTION__, propertiesSessionData[3].aValue);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s ::  Get Oem object ID Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s ::  Get Session ID Failed with Obj:\"%s\" !!!\n", __FUNCTION__, sOEMObjID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Delete Object From Set Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Delete Hash Failed with Obj:\"%s\" !!!\n", __FUNCTION__, sOEMObjID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Delete Hash Failed with Obj:\"%s\" !!!\n", __FUNCTION__, sTTLObjID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Delete Hash Failed with Obj:\"%s\" !!!\n",__FUNCTION__,  objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):    dbg_log("%s :: start : objID = %s !!!\n",__FUNCTION__,  objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):            dbg_log("%s :: send sw event %d failed !!!\n", __FUNCTION__, MSGID_LOCAL_LOGIN_FAILURES);
-RF_Session.c (src\ssiplugins\ssi_backend\session):            dbg_log("%s :: send sw event %d failed !!!\n", __FUNCTION__, MSGID_REMOTE_LOGIN_FAILURES);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get IP address Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):                dbg_log("%s :: Get UserName Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):                dbg_log("%s :: Get Password Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):                dbg_log("%s :: Get DigestHeader Failed with Obj:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):                dbg_log("%s :: validateDigestUser failed:\"%s\" !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: hidden account is come from %s, reject it !!!\n", __FUNCTION__, ipAddr);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Update Session Hash \"%s\" Failed !!!\n", __FUNCTION__, objID);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: Get Schema Data Failed with Obj:\"%s\" !!!\n", __FUNCTION__, G_SessionSchema_typeId);
-RF_Session.c (src\ssiplugins\ssi_backend\session):         dbg_log("%s() :: failed to register hook function\n", __FUNCTION__);
-RF_Session.c (src\ssiplugins\ssi_backend\session):         dbg_log("%s() :: failed to register hook function\n", __FUNCTION__);
-RF_Session.c (src\ssiplugins\ssi_backend\session):        dbg_log("%s :: remove collection failed ...\n", __FUNCTION__);
+---- MAXIPV4 Matches (13 in 3 files) ----
+Netconf_lib.h (src\netconflib):#define MAXIPV4 1
+Netconf_lib.h (src\netconflib):    char szIp[MAXIPV4][MAX_IPV4_IP_LEN];
+Netconf_lib.h (src\netconflib):    char szMask[MAXIPV4][MAX_IPV4_IP_LEN];
+Netconf_lib.h (src\netconflib):    char szGw[MAXIPV4][MAX_IPV4_IP_LEN];
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):        for (i = 0; i < MAXIPV4; i++)
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for(i = 0 ; i < MAXIPV4; i++)
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    sListData ipv4ListData[MAXIPV4];
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (i = 0; i < MAXIPV4; i++)
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    if(stingrayCreateListTable(rdsCtx, pUuids->ipv4addr.self.myUuid.c_str(), ipv4ListData, MAXIPV4) != STATUS_OK)
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (i = 0; i < MAXIPV4; i++)
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (int nIdx=0; nIdx < MAXIPV4; nIdx++)
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (int nIdx=0; nIdx < MAXIPV4; nIdx++)
+RF_EthIface.h (src\ssiplugins\ssi_backend\ethiface):                TBLIST_ITEM_s odataRef[MAXIPV4];
