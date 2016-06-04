@@ -1,14 +1,4 @@
----- MAXIPV4 Matches (13 in 3 files) ----
-Netconf_lib.h (src\netconflib):#define MAXIPV4 1
-Netconf_lib.h (src\netconflib):    char szIp[MAXIPV4][MAX_IPV4_IP_LEN];
-Netconf_lib.h (src\netconflib):    char szMask[MAXIPV4][MAX_IPV4_IP_LEN];
-Netconf_lib.h (src\netconflib):    char szGw[MAXIPV4][MAX_IPV4_IP_LEN];
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):        for (i = 0; i < MAXIPV4; i++)
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for(i = 0 ; i < MAXIPV4; i++)
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    sListData ipv4ListData[MAXIPV4];
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (i = 0; i < MAXIPV4; i++)
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    if(stingrayCreateListTable(rdsCtx, pUuids->ipv4addr.self.myUuid.c_str(), ipv4ListData, MAXIPV4) != STATUS_OK)
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (i = 0; i < MAXIPV4; i++)
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (int nIdx=0; nIdx < MAXIPV4; nIdx++)
-RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    for (int nIdx=0; nIdx < MAXIPV4; nIdx++)
-RF_EthIface.h (src\ssiplugins\ssi_backend\ethiface):                TBLIST_ITEM_s odataRef[MAXIPV4];
+---- hiloCapTempTimeTick Matches (3 in 1 files) ----
+coolerSql.c (src\icombackend\coolerd\coolerdev):    u_int32_t hiloCapTempTimeTick;      //Capture temperature time tick
+coolerSql.c (src\icombackend\coolerd\coolerdev):    if(ctx->currTimeTick > privHilo->hiloCapTempTimeTick) {
+coolerSql.c (src\icombackend\coolerd\coolerdev):        privHilo->hiloCapTempTimeTick = ctx->currTimeTick + CSQL_HILO_CAP_TEMP_INTV;
