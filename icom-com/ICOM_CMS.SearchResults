@@ -1,4 +1,3 @@
----- hiloCapTempTimeTick Matches (3 in 1 files) ----
-coolerSql.c (src\icombackend\coolerd\coolerdev):    u_int32_t hiloCapTempTimeTick;      //Capture temperature time tick
-coolerSql.c (src\icombackend\coolerd\coolerdev):    if(ctx->currTimeTick > privHilo->hiloCapTempTimeTick) {
-coolerSql.c (src\icombackend\coolerd\coolerdev):        privHilo->hiloCapTempTimeTick = ctx->currTimeTick + CSQL_HILO_CAP_TEMP_INTV;
+---- AlertSettingUpdateObject Matches (2 in 1 files) ----
+RF_AlertSetting.cpp (src\ssiplugins\ssi_backend\alertmgr\alertsetting):void *AlertSettingUpdateObject(std::string apiName)
+RF_AlertSetting.cpp (src\ssiplugins\ssi_backend\alertmgr\alertsetting):    c_AlertSettingApiToStingray->ssiAddRunningThread(AlertSettingUpdateObject, basename(argv[0]));
