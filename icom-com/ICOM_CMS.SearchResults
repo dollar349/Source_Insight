@@ -1,4 +1,33 @@
----- hiloCapTempTimeTick Matches (3 in 1 files) ----
-coolerSql.c (src\icombackend\coolerd\coolerdev):    u_int32_t hiloCapTempTimeTick;      //Capture temperature time tick
-coolerSql.c (src\icombackend\coolerd\coolerdev):    if(ctx->currTimeTick > privHilo->hiloCapTempTimeTick) {
-coolerSql.c (src\icombackend\coolerd\coolerdev):        privHilo->hiloCapTempTimeTick = ctx->currTimeTick + CSQL_HILO_CAP_TEMP_INTV;
+---- UuidInitalizeTable Matches (32 in 16 files) ----
+RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis): * RF_Chassis::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
+RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):void RF_Chassis::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids)
+RF_Chassis.h (src\ssiplugins\ssi_backend\chassis):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids);
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv): * RF_FWServ::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):void RF_FWServ::UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, TBLIST_s *pUuids)
+RF_FWServ.h (src\ssiplugins\ssi_backend\fwserv):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, TBLIST_s *pUuids);
+RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogEntry::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
+RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogEntry::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRY_TBLIST_s *pUuids)
+RF_LogEntry.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRY_TBLIST_s *pUuids);
+RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogEntryCollection::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
+RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogEntryCollection::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRYCOLL_TBLIST_s *pUuids)
+RF_LogEntryCollection.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRYCOLL_TBLIST_s *pUuids);
+RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogService::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
+RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogService::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGSRV_TBLIST_s *pUuids)
+RF_LogService.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGSRV_TBLIST_s *pUuids);
+RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogServiceCollection::UuidInitalizeTable() - initialize service UUID table.
+RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):    UuidInitalizeTable(rdsCtx, &m_sUuids);
+RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogServiceCollection::UuidInitalizeTable(redisContext *rdsCtx, LOGSRVCOLL_TBLIST_s *pUuids)
+RF_LogServiceCollection.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, LOGSRVCOLL_TBLIST_s *pUuids);
+RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample): * RF_SampleServ::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
+RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):void RF_SampleServ::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids)
+RF_SampleServ.h (src\ssiplugins\ssi_backend\sample):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal): * RF_Thermal::UuidInitalizeTable() - initialize service UUID table with instance index.
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUUIDs[iInstanceIndex]);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):void RF_Thermal::UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, THERMAL_TBLIST_s *pUuids)
+RF_Thermal.h (src\ssiplugins\ssi_backend\thermal):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, THERMAL_TBLIST_s *pUuids);
