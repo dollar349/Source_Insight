@@ -1,33 +1,74 @@
----- UuidInitalizeTable Matches (32 in 16 files) ----
-RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis): * RF_Chassis::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
-RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):void RF_Chassis::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids)
-RF_Chassis.h (src\ssiplugins\ssi_backend\chassis):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids);
-RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv): * RF_FWServ::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
-RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):void RF_FWServ::UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, TBLIST_s *pUuids)
-RF_FWServ.h (src\ssiplugins\ssi_backend\fwserv):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, TBLIST_s *pUuids);
-RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogEntry::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
-RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogEntry::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRY_TBLIST_s *pUuids)
-RF_LogEntry.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRY_TBLIST_s *pUuids);
-RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogEntryCollection::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
-RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogEntryCollection::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRYCOLL_TBLIST_s *pUuids)
-RF_LogEntryCollection.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGENTRYCOLL_TBLIST_s *pUuids);
-RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogService::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
-RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogService::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGSRV_TBLIST_s *pUuids)
-RF_LogService.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, LOGSRV_TBLIST_s *pUuids);
-RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr): * RF_LogServiceCollection::UuidInitalizeTable() - initialize service UUID table.
-RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):    UuidInitalizeTable(rdsCtx, &m_sUuids);
-RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):void RF_LogServiceCollection::UuidInitalizeTable(redisContext *rdsCtx, LOGSRVCOLL_TBLIST_s *pUuids)
-RF_LogServiceCollection.h (src\ssiplugins\ssi_backend\cemgr):        void UuidInitalizeTable(redisContext *rdsCtx, LOGSRVCOLL_TBLIST_s *pUuids);
-RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample): * RF_SampleServ::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUuids[iInstanceIndex]);
-RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):void RF_SampleServ::UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids)
-RF_SampleServ.h (src\ssiplugins\ssi_backend\sample):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t instanceIdx, TBLIST_s *pUuids);
-RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal): * RF_Thermal::UuidInitalizeTable() - initialize service UUID table with instance index.
-RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):        UuidInitalizeTable(rdsCtx, iInstanceIndex, &m_sUUIDs[iInstanceIndex]);
-RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):void RF_Thermal::UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, THERMAL_TBLIST_s *pUuids)
-RF_Thermal.h (src\ssiplugins\ssi_backend\thermal):        void UuidInitalizeTable(redisContext *rdsCtx, int32_t iInstanceIdx, THERMAL_TBLIST_s *pUuids);
+---- m_schemaFileUuid Matches (73 in 20 files) ----
+Bacnet.cpp (src\ssiplugins\ssi_backend\bmsserv):            NewUuidItem(pItem->tbItem, instanceIdx, pItem->tbType, m_schemaFileUuid, a8PropertyValue);
+Modbus.cpp (src\ssiplugins\ssi_backend\bmsserv):            NewUuidItem(pItem->tbItem, instanceIdx, pItem->tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Account.cpp (src\ssiplugins\ssi_backend\account):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, MGRACC_SCHEMA_DEFINITIONS_ROOT, tmpValue, sizeof(tmpValue)))
+RF_Account.cpp (src\ssiplugins\ssi_backend\account):        NewUuidItem(&pInstUuids->self, TB_OBJECT, m_schemaFileUuid, tmpValue);
+RF_Account.cpp (src\ssiplugins\ssi_backend\account):            NewUuidItem(items[i].tbItem, items[i].tbType, m_schemaFileUuid, tmpValue);
+RF_Base.cpp (src\ssiplugins\ssi_backend):    m_schemaFileUuid = m_ssiPlugin->ssiGetTypeId();
+RF_Base.cpp (src\ssiplugins\ssi_backend):    m_ssiCApi->ssicbIdSet(m_schemaFileUuid.c_str());
+RF_Base.h (src\ssiplugins\ssi_backend):        std::string m_schemaFileUuid;
+RF_Basic.cpp (src\ssiplugins\ssi_backend\common):    m_schemaFileUuid = m_ssiPlugin->ssiGetTypeId();
+RF_Basic.cpp (src\ssiplugins\ssi_backend\common):    m_ssiCApi->ssicbIdSet(m_schemaFileUuid.c_str());
+RF_Basic.h (src\ssiplugins\ssi_backend\common):        string m_schemaFileUuid;          // schema UUID
+RF_BMSServ.cpp (src\ssiplugins\ssi_backend\bmsserv):    if( !GetHashValueByKeys( rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, tmpValue, sizeof(tmpValue) ) )
+RF_BMSServ.cpp (src\ssiplugins\ssi_backend\bmsserv):        NewUuidItem( &pInstUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, tmpValue );
+RF_BMSServ.cpp (src\ssiplugins\ssi_backend\bmsserv):            NewUuidItem( BMSServiceItems[i].tbItem, instanceIdx, BMSServiceItems[i].tbType, m_schemaFileUuid, tmpValue );
+RF_BMSServ.cpp (src\ssiplugins\ssi_backend\bmsserv):        NewUuidItem( &UIDuuidItem[i], instanceIdx, TB_OBJECT, m_schemaFileUuid,
+RF_BMSServ.cpp (src\ssiplugins\ssi_backend\bmsserv):            NewUuidItem(&RelatedItemUuidItem[i], instanceIdx, TB_OBJECT, m_schemaFileUuid, tmpValue);
+RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, a8PropertyValue,sizeof(a8PropertyValue)))
+RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):        UuidNewItem(&pUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_Chassis.cpp (src\ssiplugins\ssi_backend\chassis):            UuidNewItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):    INFO_PRINT("Schema typeId: %s\n", m_schemaFileUuid.c_str());
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathAvctDiag, m_schemaFileUuid, oPathAvctDiag,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathDiag, m_schemaFileUuid, oPathDiag,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathDiagInputStates, m_schemaFileUuid, oPathDiagInputStates,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathDiagOutputStates, m_schemaFileUuid, oPathDiagOutputStates,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathMicroController, m_schemaFileUuid, oPathMicroController,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathActs, m_schemaFileUuid, oPathActs,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):        { oPathActsStartTest, m_schemaFileUuid, oPathActsStartTest,
+RF_Diag.cpp (src\ssiplugins\ssi_backend\diagnostics):            NewUuidItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, tmpValue);
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    INFO_PRINT("Schema typeId: %s\n", m_schemaFileUuid.c_str());
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT,
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):        NewUuidItem(&pInstUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):            NewUuidItem(pItem->tbItem, instanceIdx, pItem->tbType, m_schemaFileUuid, a8PropertyValue);
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):            NewUuidItem(&pInstUuids->ipv4addr.odataRef[i], instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_EthIface.cpp (src\ssiplugins\ssi_backend\ethiface):    printf("Ethernet SchemaFile: %s\n", m_schemaFileUuid.c_str());
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, a8PropertyValue,sizeof(a8PropertyValue)))
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):        UuidNewItem(&pUuids->self, iInstanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):            UuidNewItem(items[i].tbItem, iInstanceIdx, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):        if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid.c_str(), "definitions>FirmwareInformation", a8PropertyValue,
+RF_FWServ.cpp (src\ssiplugins\ssi_backend\fwserv):                        m_schemaFileUuid, a8PropertyValue);
+RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, LOGENTRY_SCHEMA_DEFINITIONS_ROOT, a8PropertyValue, sizeof(a8PropertyValue)))
+RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidNewItem(&pUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_LogEntry.cpp (src\ssiplugins\ssi_backend\cemgr):            UuidNewItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, LOGENTRYCOLL_SCHEMA_DEFINITIONS_ROOT, a8PropertyValue, sizeof(a8PropertyValue)))
+RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidNewItem(&pUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_LogEntryCollection.cpp (src\ssiplugins\ssi_backend\cemgr):                UuidNewItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, LOGSRV_SCHEMA_DEFINITIONS_ROOT, a8PropertyValue, sizeof(a8PropertyValue)))
+RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidNewItem(&pUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_LogService.cpp (src\ssiplugins\ssi_backend\cemgr):                UuidNewItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, LOGSRVCOLL_SCHEMA_DEFINITIONS_ROOT, a8PropertyValue, sizeof(a8PropertyValue)))
+RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):        UuidNewItem(&pUuids->self, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_LogServiceCollection.cpp (src\ssiplugins\ssi_backend\cemgr):            UuidNewItem(items[i].tbItem, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, a8PropertyValue,sizeof(a8PropertyValue)))
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):        NewUuidItem(&pInstUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):            NewUuidItem(pItem->tbItem, instanceIdx, pItem->tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):            NewUuidItem(&pInstUuids->oem.icomCms.coolingUnits.odataRef[i], instanceIdx, TB_OBJECT, m_schemaFileUuid,
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):    FillHashData(&icomHash, "schemaID", m_schemaFileUuid.c_str());
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):        { m_schemaFileUuid, "definitions>ModbusUID", TB_OBJECT,
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):            NewUuidItem(pItem->tbItem, instanceIdx, pItem->tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):        NewUuidItem(&m_ModbusUIDuuidItem[instanceIdx][i], instanceIdx, TB_OBJECT, m_schemaFileUuid,
+RF_Manager.cpp (src\ssiplugins\ssi_backend\manager):            NewUuidItem(&m_ModbusRelatedItemUuidItem[instanceIdx][i], instanceIdx, TB_OBJECT, m_schemaFileUuid,
+RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, a8PropertyValue,sizeof(a8PropertyValue)))
+RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):        UuidNewItem(&pUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_SampleServ.cpp (src\ssiplugins\ssi_backend\sample):            UuidNewItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Session.cpp (src\ssiplugins\ssi_backend\session):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, tmpValue, sizeof(tmpValue)))
+RF_Session.cpp (src\ssiplugins\ssi_backend\session):        NewUuidItem(&pInstUuids->self, instanceIdx, TB_OBJECT, m_schemaFileUuid, tmpValue);
+RF_Session.cpp (src\ssiplugins\ssi_backend\session):            NewUuidItem(items[i].tbItem, instanceIdx, items[i].tbType, m_schemaFileUuid, tmpValue);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):    if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid, SCHEMA_DEFINITIONS_ROOT, a8PropertyValue,sizeof(a8PropertyValue)))
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):        UuidNewItem(&pUuids->self, iInstanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):            UuidNewItem(Items[i].tbItem, iInstanceIdx, Items[i].tbType, m_schemaFileUuid, a8PropertyValue);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):        if(!GetHashValueByKeys(rdsCtx, m_schemaFileUuid.c_str(), "definitions>Fan", a8PropertyValue,
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):            UuidNewItem(&(pUuids->fans.fan[i].self), iInstanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):            UuidNewItem(&(pUuids->fans.fan[i].oem.self), iInstanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
+RF_Thermal.cpp (src\ssiplugins\ssi_backend\thermal):            UuidNewItem(&(pUuids->fans.fan[i].oem.icomcms), iInstanceIdx, TB_OBJECT, m_schemaFileUuid, a8PropertyValue);
