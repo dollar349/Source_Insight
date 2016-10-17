@@ -1,3 +1,19 @@
----- AlertSettingUpdateObject Matches (2 in 1 files) ----
-RF_AlertSetting.cpp (src\ssiplugins\ssi_backend\alertmgr\alertsetting):void *AlertSettingUpdateObject(std::string apiName)
-RF_AlertSetting.cpp (src\ssiplugins\ssi_backend\alertmgr\alertsetting):    c_AlertSettingApiToStingray->ssiAddRunningThread(AlertSettingUpdateObject, basename(argv[0]));
+---- _MM2_DumpBuffer Matches (18 in 1 files) ----
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):void _MM2_DumpBuffer(char *title, u_int8_t *buf, int32_t bufSize)
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        //_MM2_DumpBuffer("_MM2_Read:Succ: read response", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        //_MM2_DumpBuffer("_MM2_Write:Succ: write response", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        //_MM2_DumpBuffer("_MM2_Read:Succ: read response", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        //_MM2_DumpBuffer("_MM2_Write:Succ: write response", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("_MM2_WriteBlockData:", wData, wLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        _MM2_DumpBuffer("Command resp length failed", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        _MM2_DumpBuffer("communication test failed", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        _MM2_DumpBuffer("Unknown MM2 model", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):        _MM2_DumpBuffer("Cannot get cooling unit ID", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("MM2 block data of Summary", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("MM2 block data of RunHours", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("MM2 block data of Status", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("MM2 block data of Settings", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    _MM2_DumpBuffer("ReadAlarmEnable:", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    _MM2_DumpBuffer("ReadAlarmDelay:", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("MM2 block data of Calibrate", ctx->rData, ctx->rDataLen);
+coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    //_MM2_DumpBuffer("MM2 block data of Alarms", ctx->rData, ctx->rDataLen);
