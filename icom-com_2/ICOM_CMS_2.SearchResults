@@ -1,0 +1,4 @@
+---- do command Matches (3 in 2 files) ----
+bridgeD.c (src\bridged\bridged_source):                ERR("do command 0x%x in MODE%d fail %d\n", cmd, mode, ret);
+Rs485test.c (src\librs485\librs485_source):            printf("do command fail 0x7e (%d)\n", errno);
+Rs485test.c (src\librs485\librs485_source):            printf("do command fail 0x82 (%d)\n", errno);
