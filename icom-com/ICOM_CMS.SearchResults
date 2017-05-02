@@ -1,4 +1,0 @@
----- MM2_SetTempScale Matches (3 in 1 files) ----
-coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):int32_t MM2_SetTempScale(COOLD_DEV_CTX_s *ctx, COOL_TEMP_SCALE_e value)
-coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    ctx->devSetTempScale            = &MM2_SetTempScale;
-coolerDev_MM2.c (src\icombackend\coolerd\coolerdev):    ctx->devSetTempScale            = &MM2_SetTempScale;

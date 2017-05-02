@@ -1,0 +1,6 @@
+---- LxRpaDetect Matches (5 in 3 files) ----
+LxLocalLinkMonitor.cpp (sources\enp-llmon):        m_rpa->LxRpaDetect();
+LxRackPduArray.cpp (sources\enp-llmon):    Method: LxRpaDetect
+LxRackPduArray.cpp (sources\enp-llmon):int LxRackPduArray::LxRpaDetect(void)
+LxRackPduArray.cpp (sources\enp-llmon):            "%s-%d: LxRpaDetect entry.", __func__, __LINE__);
+LxRackPduArray.h (sources\enp-llmon):    int LxRpaDetect(void);
