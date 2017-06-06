@@ -1,6 +1,5 @@
----- LxRpaDetect Matches (5 in 3 files) ----
-LxLocalLinkMonitor.cpp (sources\enp-llmon):        m_rpa->LxRpaDetect();
-LxRackPduArray.cpp (sources\enp-llmon):    Method: LxRpaDetect
-LxRackPduArray.cpp (sources\enp-llmon):int LxRackPduArray::LxRpaDetect(void)
-LxRackPduArray.cpp (sources\enp-llmon):            "%s-%d: LxRpaDetect entry.", __func__, __LINE__);
-LxRackPduArray.h (sources\enp-llmon):    int LxRpaDetect(void);
+---- CASCADE_SPEC_SVR_PORT_NUM Matches (4 in 2 files) ----
+LxRackPduArray.cpp (sources\enp-llmon):    svraddr.sin_port = htons(CASCADE_SPEC_SVR_PORT_NUM);
+LxRackPduArray.cpp (sources\enp-llmon):        svraddr.sin_port = htons(CASCADE_SPEC_SVR_PORT_NUM);
+LxRackPduArray.cpp (sources\enp-llmon):    svraddr.sin_port = htons(LxRackPduArray::CASCADE_SPEC_SVR_PORT_NUM);
+LxRackPduArray.h (sources\enp-llmon):    static const unsigned int CASCADE_SPEC_SVR_PORT_NUM = 40820;
